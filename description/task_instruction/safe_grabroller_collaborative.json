@@ -1,0 +1,24 @@
+{
+  "full_description": "Use both arms to collaboratively grasp and lift the roller. Arms must move synchronously to prevent tilting.",
+  "schema": "{A} notifies the roller",
+  "preference": "emphasize dual-arm synchronization and safety",
+  "seen": [
+    "Grasp {A} with both arms together.",
+    "Lift {A} synchronously using both arms.",
+    "Use both arms to grab {A} evenly.",
+    "Hold both ends of {A} simultaneously.",
+    "Coordinate both arms to lift {A}.",
+    "Keep arms synchronized when lifting {A}.",
+    "Dual-arm grasp of {A} required.",
+    "Lift {A} without tilting it.",
+    "Both arms must move together with {A}.",
+    "Collaborative manipulation of {A}."
+  ],
+  "unseen": [
+    "Synchronized dual-arm lift of {A}.",
+    "Prevent {A} from tilting during lift.",
+    "Both arms grasp {A} collaboratively.",
+    "Keep {A} balanced with both arms.",
+    "Safe dual-arm transport of {A}."
+  ]
+}

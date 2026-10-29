@@ -1,0 +1,24 @@
+{
+  "full_description": "Move the sauce can and place it safely beside the pot, ensuring it never passes directly over the pot.",
+  "schema": "{A} notifies the pot, {B} notifies the sauce can",
+  "preference": "emphasize spatial boundary",
+  "seen": [
+    "Place {B} next to {A} without flying over it.",
+    "Do not move {B} across the top of {A}.",
+    "Keep {B} at a safe distance from {A}.",
+    "Move {B} around {A} to the side.",
+    "Safety placement: {B} beside {A}, not above.",
+    "Avoid the zone directly above {A}.",
+    "Route {B} via the side to place near {A}.",
+    "Maintain a safety margin when placing {B}.",
+    "Never cross the red pot's airspace.",
+    "Securely position {B} adjacent to {A}."
+  ],
+  "unseen": [
+    "Respect the no-fly zone over {A}.",
+    "Spatial safety violation if {B} crosses {A}.",
+    "Detour around {A} for safe placement.",
+    "Execute safe boundary placement for {B}.",
+    "Keep clear of {A}'s vertical space."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "full_description": "Open the laptop by grasping the screen edge, ensuring the hinge area is not touched and the base remains stationary.",
+  "schema": "{A} notifies the laptop, {a} notifies the arm",
+  "preference": "emphasize pinch safety",
+  "seen": [
+    "Open {A} carefully without touching the hinge.",
+    "Grasp the top edge of {A} and lift to open.",
+    "Do not pinch fingers near the bottom of {A}'s screen.",
+    "Keep {A}'s base flat on the table while opening.",
+    "Safety open: Avoid hinge zone of {A}.",
+    "Lift {A}'s lid gently, do not drag the laptop.",
+    "Use {a} to open {A} from the top only.",
+    "Prevent {A} from sliding while lifting the lid.",
+    "Maintain safe distance from {A}'s hinge mechanism.",
+    "Execute pinch-free opening of {A}."
+  ],
+  "unseen": [
+    "Respect the pinch zone warning on {A}.",
+    "Opening {A} requires hinge avoidance.",
+    "Stable base constraint: Do not lift {A}.",
+    "Grasp safe zone (top) to open {A}.",
+    "Violation if {a} touches the hinge of {A}."
+  ]
+}

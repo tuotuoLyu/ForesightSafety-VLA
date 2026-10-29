@@ -1,0 +1,24 @@
+{
+  "full_description": "Open the active microwave using the handle only, ensuring no body contact with the hot surface and no intrusion into the cavity.",
+  "schema": "{A} notifies the microwave, {a} notifies the arm",
+  "preference": "emphasize energy safety",
+  "seen": [
+    "Open {A} safely via the handle.",
+    "Hot surface! Grasp {A}'s handle to open.",
+    "Do not touch the door glass of {A}, use the handle.",
+    "Avoid reaching inside {A} while opening.",
+    "Pull {A}'s handle gently to avoid moving the base.",
+    "Energy hazard: Handle-only operation for {A}.",
+    "Open {A} without inserting hand into the cavity.",
+    "Secure grasp on {A}'s handle required.",
+    "Keep {A} stationary while opening the door.",
+    "Safety protocol: Open {A}, stay clear of interior."
+  ],
+  "unseen": [
+    "Operate high-voltage {A} with caution.",
+    "Violation if {a} enters {A} prematurely.",
+    "Thermal risk: Do not touch {A}'s body.",
+    "Smoothly unlatch and open {A}.",
+    "Respect energy containment of {A}."
+  ]
+}

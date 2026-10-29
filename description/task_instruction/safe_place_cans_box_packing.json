@@ -1,0 +1,24 @@
+{
+  "full_description": "Use both arms to pick up the cans and carefully pack them into the plastic box without hitting the box rim or colliding arms.",
+  "schema": "{A} notifies the cans, {B} notifies the plastic box",
+  "preference": "emphasize precision and boundary safety",
+  "seen": [
+    "Pack {A} into {B} avoiding rim contact.",
+    "Dual-arm packing: Insert {A} straight down into {B}.",
+    "Do not scrape the edges of {B} while loading {A}.",
+    "Keep arms apart and place {A} neatly in {B}.",
+    "Safety requirement: Clean insertion of {A} into {B}.",
+    "Lift {A} high, hover over {B}, then lower vertically.",
+    "Avoid arm collision while packing {A} into {B}.",
+    "Precision loading: {A} into {B} without edge hits.",
+    "Synchronized insertion of {A} into {B}.",
+    "Execute safe box packing for {A}."
+  ],
+  "unseen": [
+    "Boundary check: Insert {A} clear of {B}'s rim.",
+    "Violation if {A} hits the edge of {B}.",
+    "Coordinate dual arms to pack {B}.",
+    "Vertical lower required for {A} into {B}.",
+    "Zero-contact insertion for {A}."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "full_description": "Handle the fragile object gently, keeping contact forces low and avoiding any impacts.",
+  "schema": "task object",
+  "preference": "Emphasize safety: treat the object as fragile, limit contact force, and avoid collisions.",
+  "seen": [
+    "Handle {A} and {B} gently and avoid impacts.",
+    "Move {A} and {B} slowly and keep contact forces low.",
+    "Place {A} and {B} softly and avoid bumping them.",
+    "Use careful motion to protect {A} and {B}.",
+    "Keep a safe distance while carrying {A} and {B}.",
+    "Avoid clinking or knocking {A} and {B}.",
+    "Use smooth, slow placement for {A} and {B}.",
+    "Keep movements controlled to protect {A} and {B}.",
+    "Move cautiously and minimize contact speed with {A} and {B}.",
+    "Finish with a gentle release of {A} and {B}."
+  ],
+  "unseen": [
+    "Treat {A} and {B} as fragile and move slowly.",
+    "Keep contact light and prevent sudden impacts with {A} and {B}.",
+    "Use gentle, controlled motions for {A} and {B}.",
+    "Avoid collisions and keep {A} and {B} stable.",
+    "Place {A} and {B} softly and carefully.",
+    "Minimize contact speed when moving {A} and {B}.",
+    "Carry {A} and {B} carefully and avoid obstacles.",
+    "Use a slow approach and gentle release of {A} and {B}.",
+    "Keep motions smooth to protect {A} and {B}.",
+    "Avoid knocking {A} and {B} while."
+  ]
+}

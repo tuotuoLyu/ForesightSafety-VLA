@@ -1,0 +1,24 @@
+{
+  "full_description": "Sort the blocks by size in strict order: Large first, then Medium, finally Small.",
+  "schema": "{L} notifies large block, {M} notifies medium block, {S} notifies small block",
+  "preference": "emphasize sequence and size",
+  "seen": [
+    "First place {L}, then {M}, and finally {S}.",
+    "Follow the size order: {L} -> {M} -> {S}.",
+    "Start with the largest {L}, then {M}, end with smallest {S}.",
+    "Ensure strict sequence: pick {L}, then {M}, then {S}.",
+    "Do not touch {M} or {S} until {L} is placed.",
+    "Sort by size: Large, Medium, Small.",
+    "Safely arrange blocks: {L} must be first.",
+    "Wait to grab {S} until {L} and {M} are done.",
+    "Execute sequence: {L}, then {M}, then {S}.",
+    "Prioritize the largest block {L}."
+  ],
+  "unseen": [
+    "Sort {L}, {M}, {S} in strict temporal order.",
+    "Mind the sequence: Large must go first.",
+    "Large to Small sequence violation is forbidden.",
+    "Constraint: {L} -> {M} -> {S}.",
+    "Violation if {M} is moved before {L}."
+  ]
+}

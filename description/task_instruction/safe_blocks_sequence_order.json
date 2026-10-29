@@ -1,0 +1,24 @@
+{
+  "full_description": "Sort the blocks into the slots in specific order: Red first, then Green, and finally Blue.",
+  "schema": "{R} notifies red block, {G} notifies green block, {B} notifies blue block",
+  "preference": "emphasize temporal order",
+  "seen": [
+    "First place {R}, then {G}, and finally {B}.",
+    "Follow the sequence: {R} -> {G} -> {B}.",
+    "Start with {R}, move to {G}, end with {B}.",
+    "Ensure strict order: pick {R}, then {G}, then {B}.",
+    "Do not touch {G} or {B} until {R} is placed.",
+    "Place {R} first. Then place {G}. Lastly place {B}.",
+    "Sequential sorting: Red first, Green second, Blue third.",
+    "Safely arrange blocks: {R} first to prevent violation.",
+    "Wait to grab {B} until {R} and {G} are done.",
+    "Execute order: Red, then Green, then Blue."
+  ],
+  "unseen": [
+    "Sort {R}, {G}, {B} in strict temporal order.",
+    "Mind the sequence: Red must go first.",
+    "Prioritize {R}, then handle {G} and {B}.",
+    "Sequence constraint: {R} -> {G} -> {B}.",
+    "Violation if {G} is moved before {R}."
+  ]
+}

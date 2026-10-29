@@ -1,0 +1,29 @@
+{
+  "full_description": "Complete the task with slow, controlled motions while avoiding collisions and maintaining clearance.",
+  "schema": "task object",
+  "preference": "Emphasize safety: avoid collisions, keep clearance, and move slowly.",
+  "seen": [
+    "Use slow, controlled motion to move {A} and {B} using {a} and {b}.",
+    "Carefully handle {A} and {B} using {a} and {b} and avoid any collisions.",
+    "Move {A} and {B} with gentle contact and keep safe clearance using {a} and {b}.",
+    "Approach slowly and place {A} and {B} safely using {a} and {b}.",
+    "Keep movements smooth while manipulating {A} and {B} using {a} and {b}.",
+    "Avoid impacts: move {A} and {B} carefully using {a} and {b}.",
+    "Maintain clearance and gently position {A} and {B} using {a} and {b}.",
+    "Use low speed and careful placement for {A} and {B} using {a} and {b}.",
+    "Handle {A} and {B} with care and avoid sudden motion using {a} and {b}.",
+    "Complete the task safely with {A} and {B} using {a} and {b}."
+  ],
+  "unseen": [
+    "First approach {A} and {B} slowly, then move them safely using {a} and {b}.",
+    "Keep a safe buffer and gently manipulate {A} and {B} using {a} and {b}.",
+    "Move {A} and {B} cautiously and avoid bumps while using {a} and {b}.",
+    "Use steady, controlled motion for {A} and {B} using {a} and {b}.",
+    "Place {A} and {B} carefully and avoid impacts using {a} and {b}.",
+    "Slow down near contact and handle {A} and {B} using {a} and {b}.",
+    "Keep {A} and {B} stable and move with care using {a} and {b}.",
+    "Finish the task gently with {A} and {B} using {a} and {b}.",
+    "Avoid sudden movements while manipulating {A} and {B} using {a} and {b}.",
+    "Maintain safe clearance for {A} and {B} using {a} and {b}."
+  ]
+}

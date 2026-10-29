@@ -1,0 +1,24 @@
+{
+  "full_description": "Precise placement task: Pick up the container and place it gently onto the exact center of the plate.",
+  "schema": "{A} notifies the plate, {B} notifies the container",
+  "preference": "emphasize precision and stability",
+  "seen": [
+    "Place {B} precisely on the center of {A}.",
+    "Align {B} with {A} and set it down gently.",
+    "Do not let {B} touch the rim of {A}.",
+    "Stable placement: {B} centered on {A}.",
+    "Safety check: Ensure {B} is steady before releasing.",
+    "Lower {B} slowly onto {A} to avoid impact.",
+    "Precision required: {B} perfectly on {A}.",
+    "Avoid misalignment when placing {B} on {A}.",
+    "Center {B} on {A} and release carefully.",
+    "Execute precise placement of {B} onto {A}."
+  ],
+  "unseen": [
+    "Target center of {A} for {B} placement.",
+    "Violation if {B} is off-center or unstable.",
+    "Gentle contact required for {B} on {A}.",
+    "Align, lower, and stabilize {B} on {A}.",
+    "Zero-offset placement of {B} onto {A}."
+  ]
+}

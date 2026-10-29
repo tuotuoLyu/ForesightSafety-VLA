@@ -1,0 +1,24 @@
+{
+  "full_description": "Collaboratively hand over the microphone from one arm to the other within the safe zone.",
+  "schema": "{A} notifies the microphone, {a} notifies the grasping arm, {b} notifies the receiving arm",
+  "preference": "emphasize safety zone",
+  "seen": [
+    "Pass {A} to {b} strictly inside the safe zone.",
+    "Execute collaborative handover of {A}.",
+    "Hold {A} firmly until {b} has grasped it.",
+    "Do not release {A} outside the handover zone.",
+    "Synchronize arms to transfer {A} safely.",
+    "Move {A} to center, grasp with {b}, then release.",
+    "Ensure dual-arm stability during handover of {A}.",
+    "Safe transfer: Grasp, Align, Handover, Release.",
+    "Prevent {A} from dropping during the switch.",
+    "Use {a} and {b} to collaboratively move {A}."
+  ],
+  "unseen": [
+    "Perform safe dual-arm switch of {A}.",
+    "Violation if handover occurs outside safe zone.",
+    "Secure grasp confirmation required before release.",
+    "Transfer {A} without collision or drop.",
+    "Maintain collaborative constraints for {A}."
+  ]
+}

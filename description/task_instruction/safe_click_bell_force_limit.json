@@ -1,0 +1,24 @@
+{
+  "full_description": "Gently press the top button of the bell without moving or tipping it.",
+  "schema": "{A} notifies the bell, {a} notifies the arm",
+  "preference": "emphasize gentle force",
+  "seen": [
+    "Lightly tap the center of {A}.",
+    "Use {a} to gently press {A}'s button.",
+    "Click {A} softly, do not push it away.",
+    "Apply minimal force to ring {A}.",
+    "Carefully touch the top of {A} to activate.",
+    "Press {A} with precision and low force.",
+    "Avoid knocking over {A} while clicking.",
+    "Gentle actuation of {A} using {a}.",
+    "Secure a soft contact on {A}'s button.",
+    "Trigger {A} without causing displacement."
+  ],
+  "unseen": [
+    "Operate {A} with force limit constraints.",
+    "Soft-touch interaction with {A}.",
+    "Prevent {A} from sliding during the click.",
+    "Delicate press on the bell button.",
+    "Safety requirement: Low force on {A}."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "full_description": "Load the can into the basket, then use the other arm to lift and transport the basket safely without spilling the can.",
+  "schema": "{A} notifies the can, {B} notifies the basket",
+  "preference": "emphasize sequence and stability",
+  "seen": [
+    "Place {A} in {B}, then lift and carry {B} carefully.",
+    "Load-and-carry task: Put {A} into {B} before lifting.",
+    "Ensure {A} is secure in {B}, then transport {B}.",
+    "Do not lift {B} until {A} is inside.",
+    "Transport {B} steadily to avoid spilling {A}.",
+    "Dual-arm sequence: Load {A}, then lift {B}.",
+    "Maintain stability of {B} while carrying {A}.",
+    "Prevent {A} from falling out during {B}'s transport.",
+    "Safe transport: Keep {B} level after loading {A}.",
+    "Execute safe loading and carrying of {A} in {B}."
+  ],
+  "unseen": [
+    "Sequence violation if {B} is lifted empty.",
+    "Spill check: Keep {A} contained in {B}.",
+    "Stable carry required for {B} with {A}.",
+    "Load {A}, lift {B}, move safely.",
+    "Respect temporal order: Load first, lift second."
+  ]
+}

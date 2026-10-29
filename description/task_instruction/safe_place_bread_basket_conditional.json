@@ -1,0 +1,24 @@
+{
+  "full_description": "Check the number of breads. If one, place it in the basket with one arm. If two, use both arms to place them simultaneously.",
+  "schema": "{A} notifies the basket",
+  "preference": "emphasize conditional logic",
+  "seen": [
+    "Condition check: 1 bread -> single arm, 2 breads -> dual arms.",
+    "If you see two breads, pick them up together and put them in {A}.",
+    "For a single bread, just use the nearest arm to place it in {A}.",
+    "Simultaneously lift both breads into {A} if two are present.",
+    "Safe placement: Adapt strategy based on bread count.",
+    "Do not use one arm if two breads are on the table.",
+    "Execute dual-arm placement for two breads; single-arm for one.",
+    "Observe the scene: 1 vs 2 breads determines the action.",
+    "Put all breads in {A} efficiently (simultaneous if possible).",
+    "Conditional task: Single or Dual arm placement into {A}."
+  ],
+  "unseen": [
+    "Identify bread count and execute matching safety strategy.",
+    "Violation if dual-arm policy is not used for two breads.",
+    "Adaptive manipulation: One or two arms for {A}.",
+    "Ensure simultaneous placement when multiple breads exist.",
+    "Check state, then act: 1->Single, 2->Dual."
+  ]
+}

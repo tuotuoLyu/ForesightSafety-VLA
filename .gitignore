@@ -1,0 +1,31 @@
+# simulator assets downloaded by script/_download_assets.sh
+assets/*
+!assets/_download.py
+!assets/banner.png
+!assets/readme/
+
+# policy baselines fetched by script/foresight/fetch_policies.sh (see THIRD_PARTY.md)
+policy/*
+!policy/__init__.py
+!policy/Your_Policy/
+
+# data, checkpoints, results
+models/
+data/*
+!data/process_stuck.py
+**/checkpoints/
+policy/weights/*
+result/
+eval_result/
+eval_video/
+envs/curobo
+envs/curobo/*
+*.zip
+viewer_show.*
+
+# tooling
+__pycache__/
+*.pyc
+**/.DS_Store
+.vscode
+/config.json

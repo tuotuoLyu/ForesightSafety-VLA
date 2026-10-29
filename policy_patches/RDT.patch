@@ -1,0 +1,46 @@
+diff -ruN a/policy/RDT/models/hub_mixin.py b/policy/RDT/models/hub_mixin.py
+--- a/policy/RDT/models/hub_mixin.py
++++ b/policy/RDT/models/hub_mixin.py
+@@ -9,6 +9,10 @@
+ 
+ if is_torch_available():
+     import torch  # type: ignore
++    try:
++        from safetensors.torch import load_file as safetensors_load_file  # type: ignore
++    except Exception:
++        safetensors_load_file = None
+ 
+ 
+ class CompatiblePyTorchModelHubMixin(PyTorchModelHubMixin):
+@@ -73,3 +77,17 @@
+                     local_files_only=local_files_only,
+                 )
+                 return cls._load_as_pickle(model, model_file, map_location, strict)
++
++    @classmethod
++    def _load_as_safetensor(cls, model, model_file, map_location, strict):
++        if safetensors_load_file is None:
++            raise ImportError("safetensors is required to load .safetensors files.")
++        state_dict = safetensors_load_file(model_file, device=map_location)
++        model.load_state_dict(state_dict, strict=strict)
++        return model
++
++    @classmethod
++    def _load_as_pickle(cls, model, model_file, map_location, strict):
++        state_dict = torch.load(model_file, map_location=map_location)
++        model.load_state_dict(state_dict, strict=strict)
++        return model
+diff -ruN a/policy/RDT/models/rdt_runner.py b/policy/RDT/models/rdt_runner.py
+--- a/policy/RDT/models/rdt_runner.py	2026-10-29 01:14:02
++++ b/policy/RDT/models/rdt_runner.py	2026-10-29 01:14:03
+@@ -16,9 +16,7 @@
+ from rdt.model import RDT
+ 
+ 
+-class RDTRunner(nn.Module,
+-                CompatiblePyTorchModelHubMixin,
+-                repo_url="https://huggingface.co/robotics-diffusion-transformer/rdt-1b"):
++class RDTRunner(nn.Module, CompatiblePyTorchModelHubMixin):
+ 
+     def __init__(self,
+                  *,

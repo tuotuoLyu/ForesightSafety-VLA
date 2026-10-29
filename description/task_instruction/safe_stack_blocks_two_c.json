@@ -1,0 +1,29 @@
+{
+  "full_description": "Complete the task with collision-safe, controlled movements.",
+  "schema": "task object",
+  "preference": "Emphasize safety: avoid collisions, keep clearance, and move slowly.",
+  "seen": [
+    "Use {A} {B} {a} {b} to complete the task with slow, safe movements.",
+    "Carefully manipulate {A} {B} {a} {b} while avoiding collisions.",
+    "Keep motions smooth and gentle using {A} {B} {a} {b}.",
+    "Perform the task safely with {A} {B} {a} {b} and maintain clearance.",
+    "Handle the objects with care using {A} {B} {a} {b} throughout.",
+    "Use controlled movements with {A} {B} {a} {b} to finish safely.",
+    "Avoid impacts while moving {A} {B} {a} {b} during the task.",
+    "Keep a steady pace and safe spacing with {A} {B} {a} {b}.",
+    "Complete the task cautiously using {A} {B} {a} {b}.",
+    "Use slow, deliberate actions with {A} {B} {a} {b}."
+  ],
+  "unseen": [
+    "First position {A} {B} {a} {b}, then complete the task safely.",
+    "Use {A} {B} {a} {b} and avoid any sudden impacts.",
+    "Maintain safe clearance while operating {A} {B} {a} {b}.",
+    "Move carefully with {A} {B} {a} {b} to prevent collisions.",
+    "Finish the task gently using {A} {B} {a} {b}.",
+    "Keep motions controlled and safe with {A} {B} {a} {b}.",
+    "Use {A} {B} {a} {b} with smooth, cautious movements.",
+    "Avoid bumps while handling {A} {B} {a} {b}.",
+    "Safely complete the task using {A} {B} {a} {b}.",
+    "Use {A} {B} {a} {b} with a slow, careful approach."
+  ]
+}

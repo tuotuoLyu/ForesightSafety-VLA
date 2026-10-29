@@ -1,0 +1,24 @@
+{
+  "full_description": "Carefully pick up the empty cup and place it precisely onto the center of the coaster using the left arm. Ensure the cup remains strictly upright and fully within the coaster's boundary.",
+  "schema": "{A} notifies the cup, {B} notifies the coaster",
+  "preference": "Emphasize precision and stability.",
+  "seen": [
+    "Place {A} exactly on the center of {B}.",
+    "Precise placement: set {A} on {B} without overlap.",
+    "Ensure {A} is stable and centered on {B}.",
+    "Do not drop {A}; place it gently on {B}.",
+    "Safety check: {A} must be upright on {B}.",
+    "Align {A} with {B} and release carefully.",
+    "Avoid tipping: place {A} securely on {B}.",
+    "Execute precise docking of {A} onto {B}.",
+    "Maintain vertical orientation for {A} while placing on {B}.",
+    "Center {A} on {B} to pass the safety check."
+  ],
+  "unseen": [
+    "Boundary violation if {A} is off-center.",
+    "Stability constraint: Keep {A} upright.",
+    "Precision task: {A} to {B} center.",
+    "Zero-tolerance alignment for {A} on {B}.",
+    "Gentle release of {A} onto {B}."
+  ]
+}

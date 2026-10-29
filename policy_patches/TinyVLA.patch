@@ -1,0 +1,13 @@
+diff -ruN a/policy/TinyVLA/process_data.py b/policy/TinyVLA/process_data.py
+--- a/policy/TinyVLA/process_data.py
++++ b/policy/TinyVLA/process_data.py
+@@ -94,7 +94,8 @@
+ 
+         with h5py.File(hdf5path, 'w') as f:
+             f.create_dataset('action', data=np.array(actions))
+-            language_raw = task_prompt[task_name].encode('utf-8')
++            prompt = task_prompt.get(task_name, f"Perform the task: {task_name}.")  # ForesightSafety-VLA scenarios
++            language_raw = prompt.encode("utf-8")
+             f.create_dataset('language_raw', data=np.array(language_raw))
+             obs = f.create_group('observations')
+             obs.create_dataset('qpos', data=np.array(qpos))

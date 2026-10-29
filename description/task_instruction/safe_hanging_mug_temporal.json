@@ -1,0 +1,24 @@
+{
+  "full_description": "First place the mug stably in the center with the left arm, then pick it up with the right arm and hang it on the rack.",
+  "schema": "{A} notifies the mug, {B} notifies the rack",
+  "preference": "emphasize sequence",
+  "seen": [
+    "Place {A} in the middle before hanging it on {B}.",
+    "Step 1: Left arm places {A} on table. Step 2: Right arm hangs {A}.",
+    "Do not hang {A} directly; place it down first.",
+    "Ensure {A} is stable in the center before re-grasping.",
+    "Switch hands via a stable placement on the table.",
+    "Safe sequence: Grasp -> Place -> Re-grasp -> Hang.",
+    "Wait for {A} to stop moving before the right arm grabs it.",
+    "Transfer {A} by placing it down, not by air handover.",
+    "Avoid direct transfer; use the table as a buffer.",
+    "Execute the safe hanging procedure for {A}."
+  ],
+  "unseen": [
+    "Follow the placement-first safety protocol.",
+    "Violation if {A} is hung without intermediate placement.",
+    "Secure {A} on the table before the final hang.",
+    "Strict temporal order: Place then Hang.",
+    "No shortcuts allowed in hanging {A}."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "full_description": "Pick up object A and place it safely to the left of object B without colliding with it.",
+  "schema": "{A} notifies object A, {B} notifies object B",
+  "preference": "emphasize spatial relation and safety",
+  "seen": [
+    "Place {A} to the left of {B} maintaining a safe gap.",
+    "Move {A} next to {B} on the left side, do not touch.",
+    "Position {A} strictly left of {B} without collision.",
+    "Ensure {A} lands left of {B} with clearance.",
+    "Safe placement: {A} to the left of {B}.",
+    "Pick {A}, avoid {B}, place on the left.",
+    "Keep separation while placing {A} left of {B}.",
+    "No contact allowed: Set {A} to the left of {B}.",
+    "Navigate {A} to the empty space left of {B}.",
+    "Execute safe left-side placement for {A} relative to {B}."
+  ],
+  "unseen": [
+    "Spatial safety check: {A} left of {B}.",
+    "Violation if {A} touches {B} during placement.",
+    "Respect boundary and clearance for {A}.",
+    "Target zone: Left of {B}, safe distance.",
+    "Handle {A} carefully around {B}."
+  ]
+}

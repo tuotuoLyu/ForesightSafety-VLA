@@ -1,0 +1,24 @@
+{
+  "full_description": "Use both arms to grab the handles of the hot pot, keep it level, and place it on the cooling pad.",
+  "schema": "{A} notifies the hot pot, {B} notifies the cooling pad",
+  "preference": "emphasize thermal safety",
+  "seen": [
+    "Grab {A} by handles only and move to {B}.",
+    "Hot surface! Touch handles of {A} and place on {B}.",
+    "Carefully lift {A}, keep upright, move to {B}.",
+    "Transport hot {A} to the blue pad safely.",
+    "Dual-arm lift {A} via handles to {B}.",
+    "Prevent spills: Keep {A} level while moving.",
+    "Avoid touching the body of {A}; use ears.",
+    "Safety move: {A} to {B} without tilting.",
+    "Secure the hot pot handles and set on pad.",
+    "Thermal safety: Handle grasp {A} to {B}."
+  ],
+  "unseen": [
+    "Do not touch the hot body of {A}.",
+    "Maintain energy stability for {A} transport.",
+    "Burn risk: Handles only for {A}.",
+    "Move {A} to cooling zone without spilling.",
+    "Safe handling of high-temp {A} required."
+  ]
+}

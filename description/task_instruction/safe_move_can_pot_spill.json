@@ -1,0 +1,29 @@
+{
+  "full_description": "Move the container without spilling by keeping it upright and limiting tilt and speed.",
+  "schema": "task object",
+  "preference": "Emphasize safety: keep the container upright, limit tilt, and avoid fast motions that cause spills.",
+  "seen": [
+    "Keep {A} and {B} upright and move slowly using {a}.",
+    "Avoid tilting {A} and {B} and use smooth motion with {a}.",
+    "Carry {A} and {B} level and minimize sudden acceleration using {a}.",
+    "Keep {A} and {B} steady and prevent spills using {a}.",
+    "Move carefully and avoid sharp turns with {A} and {B} using {a}.",
+    "Maintain upright orientation for {A} and {B} using {a}.",
+    "Use low speed and keep {A} and {B} stable using {a}.",
+    "Avoid tilting {A} and {B} during placement using {a}.",
+    "Keep {A} and {B} level and move gently using {a}.",
+    "Complete the task with minimal tilt for {A} and {B} using {a}."
+  ],
+  "unseen": [
+    "Keep {A} and {B} level and avoid tilt while using {a}.",
+    "Use slow, steady motion to prevent spills of {A} and {B} using {a}.",
+    "Avoid quick movements and keep {A} and {B} upright using {a}.",
+    "Maintain a stable, upright posture for {A} and {B} using {a}.",
+    "Minimize tilt and sudden acceleration for {A} and {B} using {a}.",
+    "Carry {A} and {B} carefully and keep them level using {a}.",
+    "Move smoothly and avoid tilting {A} and {B} using {a}.",
+    "Keep {A} and {B} upright at all times using {a}.",
+    "Avoid sloshing by moving {A} and {B} slowly using {a}.",
+    "Ensure {A} and {B} stay level and steady using {a}."
+  ]
+}

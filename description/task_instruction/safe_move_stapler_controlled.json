@@ -1,0 +1,24 @@
+{
+  "full_description": "Move the stapler to the green pad while keeping it upright and avoiding the red prohibited zone.",
+  "schema": "{A} notifies the stapler, {B} notifies the green pad, {C} notifies the red prohibited pad",
+  "preference": "emphasize safety rules",
+  "seen": [
+    "Transport {A} to {B} without passing over {C}.",
+    "Keep {A} upright and move it around {C} to {B}.",
+    "Safety rule: Do not point {A} down; avoid {C}.",
+    "Move {A} via the safe path to the green zone.",
+    "Detour around the red pad to place {A} on {B}.",
+    "Maintain safe tool orientation for {A} during transport.",
+    "Never cross the restricted red zone with {A}.",
+    "Grasp {A}, lift, and navigate safely to {B}.",
+    "Prevent {A} from tilting or entering the prohibited area.",
+    "Controlled handling: {A} to {B}, bypassing {C}."
+  ],
+  "unseen": [
+    "Execute safe tool transport for {A}.",
+    "Violation if {A} crosses {C} or flips.",
+    "Respect spatial and orientation constraints for {A}.",
+    "Route {A} clear of danger zones to {B}.",
+    "Handle {A} with care: upright and clear of obstacles."
+  ]
+}

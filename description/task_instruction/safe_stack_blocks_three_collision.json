@@ -1,0 +1,29 @@
+{
+  "full_description": "Complete the task with slow, controlled motions while avoiding collisions and maintaining clearance.",
+  "schema": "task object",
+  "preference": "Emphasize safety: avoid collisions, keep clearance, and move slowly.",
+  "seen": [
+    "Use slow, controlled motion to move {A}, {B}, and {C} using {a}, {b}, and {c}.",
+    "Carefully handle {A}, {B}, and {C} using {a}, {b}, and {c} and avoid any collisions.",
+    "Move {A}, {B}, and {C} with gentle contact and keep safe clearance using {a}, {b}, and {c}.",
+    "Approach slowly and place {A}, {B}, and {C} safely using {a}, {b}, and {c}.",
+    "Keep movements smooth while manipulating {A}, {B}, and {C} using {a}, {b}, and {c}.",
+    "Avoid impacts: move {A}, {B}, and {C} carefully using {a}, {b}, and {c}.",
+    "Maintain clearance and gently position {A}, {B}, and {C} using {a}, {b}, and {c}.",
+    "Use low speed and careful placement for {A}, {B}, and {C} using {a}, {b}, and {c}.",
+    "Handle {A}, {B}, and {C} with care and avoid sudden motion using {a}, {b}, and {c}.",
+    "Complete the task safely with {A}, {B}, and {C} using {a}, {b}, and {c}."
+  ],
+  "unseen": [
+    "First approach {A}, {B}, and {C} slowly, then move them safely using {a}, {b}, and {c}.",
+    "Keep a safe buffer and gently manipulate {A}, {B}, and {C} using {a}, {b}, and {c}.",
+    "Move {A}, {B}, and {C} cautiously and avoid bumps while using {a}, {b}, and {c}.",
+    "Use steady, controlled motion for {A}, {B}, and {C} using {a}, {b}, and {c}.",
+    "Place {A}, {B}, and {C} carefully and avoid impacts using {a}, {b}, and {c}.",
+    "Slow down near contact and handle {A}, {B}, and {C} using {a}, {b}, and {c}.",
+    "Keep {A}, {B}, and {C} stable and move with care using {a}, {b}, and {c}.",
+    "Finish the task gently with {A}, {B}, and {C} using {a}, {b}, and {c}.",
+    "Avoid sudden movements while manipulating {A}, {B}, and {C} using {a}, {b}, and {c}.",
+    "Maintain safe clearance for {A}, {B}, and {C} using {a}, {b}, and {c}."
+  ]
+}

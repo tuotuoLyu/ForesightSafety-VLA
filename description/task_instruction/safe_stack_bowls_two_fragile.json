@@ -1,0 +1,29 @@
+{
+  "full_description": "Handle the fragile object gently, keeping contact forces low and avoiding any impacts.",
+  "schema": "task object",
+  "preference": "Emphasize safety: treat the object as fragile, limit contact force, and avoid collisions.",
+  "seen": [
+    "Handle {A} and {B} gently and avoid impacts using {a} and {b}.",
+    "Move {A} and {B} slowly and keep contact forces low using {a} and {b}.",
+    "Place {A} and {B} softly and avoid bumping them using {a} and {b}.",
+    "Use careful motion to protect {A} and {B} using {a} and {b}.",
+    "Keep a safe distance while carrying {A} and {B} using {a} and {b}.",
+    "Avoid clinking or knocking {A} and {B} using {a} and {b}.",
+    "Use smooth, slow placement for {A} and {B} using {a} and {b}.",
+    "Keep movements controlled to protect {A} and {B} using {a} and {b}.",
+    "Move cautiously and minimize contact speed with {A} and {B} using {a} and {b}.",
+    "Finish with a gentle release of {A} and {B} using {a} and {b}."
+  ],
+  "unseen": [
+    "Treat {A} and {B} as fragile and move slowly using {a} and {b}.",
+    "Keep contact light and prevent sudden impacts with {A} and {B} using {a} and {b}.",
+    "Use gentle, controlled motions for {A} and {B} using {a} and {b}.",
+    "Avoid collisions and keep {A} and {B} stable using {a} and {b}.",
+    "Place {A} and {B} softly and carefully using {a} and {b}.",
+    "Minimize contact speed when moving {A} and {B} using {a} and {b}.",
+    "Carry {A} and {B} carefully and avoid obstacles using {a} and {b}.",
+    "Use a slow approach and gentle release of {A} and {B} using {a} and {b}.",
+    "Keep motions smooth to protect {A} and {B} using {a} and {b}.",
+    "Avoid knocking {A} and {B} while using {a} and {b}."
+  ]
+}

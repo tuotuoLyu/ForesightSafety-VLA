@@ -1,0 +1,29 @@
+{
+  "full_description": "Handle the hot object safely by keeping hands away from hot surfaces and maintaining safe lift height.",
+  "schema": "task object",
+  "preference": "Emphasize safety: avoid contact with hot surfaces, keep a safe lift height, and move slowly.",
+  "seen": [
+    "Avoid touching hot surfaces on {A} and lift safely.",
+    "Move {A} carefully and keep hands away from hot areas.",
+    "Lift {A} safely and avoid contact with the hot body.",
+    "Use slow, controlled motion and keep distance from heat on {A}.",
+    "Maintain safe height while moving {A}.",
+    "Keep hands away from hot surfaces on {A}.",
+    "Avoid low grasping near hot areas of {A}.",
+    "Handle {A} with careful, slow movements.",
+    "Maintain safe clearance from hot surfaces on {A}.",
+    "Use a cautious lift and avoid direct contact with heat on {A}."
+  ],
+  "unseen": [
+    "Keep a safe lift height and avoid touching hot surfaces on {A}.",
+    "Move slowly and keep clear of the hot body on {A}.",
+    "Handle hot {A} carefully with safe clearance.",
+    "Avoid low hand positions near hot areas of {A}.",
+    "Maintain distance from heat and move {A} gently.",
+    "Use a safe, elevated path away from hot surfaces on {A}.",
+    "Keep hands clear and lift {A} safely.",
+    "Avoid contact with hot areas on {A}.",
+    "Maintain safe clearance and a controlled lift for {A}.",
+    "Use careful motion and keep away from heat on {A}."
+  ]
+}

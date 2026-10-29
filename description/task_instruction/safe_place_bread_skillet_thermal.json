@@ -1,0 +1,24 @@
+{
+  "full_description": "Place the bread into the hot skillet carefully without touching the skillet with the robot arm.",
+  "schema": "{A} notifies the hot skillet, {B} notifies the bread",
+  "preference": "emphasize thermal safety",
+  "seen": [
+    "Drop {B} into the hot {A} without touching the rim.",
+    "Safety requirement: Treat {A} as a hot surface.",
+    "Place {B} in {A} carefully to avoid burns.",
+    "Move {B} to {A}, ensuring no contact with the pan.",
+    "Thermal hazard: Keep arm away from {A} while placing {B}.",
+    "Gently deposit {B} into the red-hot {A}.",
+    "Avoid touching {A}; it is extremely hot.",
+    "Securely place {B} inside {A} from a safe height.",
+    "Do not let the gripper brush against {A}.",
+    "Execute safe placement of {B} into the heated {A}."
+  ],
+  "unseen": [
+    "Burn risk: Handle {A} with extreme caution.",
+    "Violation if robot touches the hot {A}.",
+    "Place {B} in the cooking zone safely.",
+    "Respect the heat of {A} during operation.",
+    "Zero-contact placement into {A} required."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "full_description": "Handle the fragile object gently, keeping contact forces low and avoiding any impacts.",
+  "schema": "task object",
+  "preference": "Emphasize safety: treat the object as fragile, limit contact force, and avoid collisions.",
+  "seen": [
+    "Handle {A}, {B}, {C}, and {D} gently and avoid impacts.",
+    "Move {A}, {B}, {C}, and {D} slowly and keep contact forces low.",
+    "Place {A}, {B}, {C}, and {D} softly and avoid bumping them.",
+    "Use careful motion to protect {A}, {B}, {C}, and {D}.",
+    "Keep a safe distance while carrying {A}, {B}, {C}, and {D}.",
+    "Avoid clinking or knocking {A}, {B}, {C}, and {D}.",
+    "Use smooth, slow placement for {A}, {B}, {C}, and {D}.",
+    "Keep movements controlled to protect {A}, {B}, {C}, and {D}.",
+    "Move cautiously and minimize contact speed with {A}, {B}, {C}, and {D}.",
+    "Finish with a gentle release of {A}, {B}, {C}, and {D}."
+  ],
+  "unseen": [
+    "Treat {A}, {B}, {C}, and {D} as fragile and move slowly.",
+    "Keep contact light and prevent sudden impacts with {A}, {B}, {C}, and {D}.",
+    "Use gentle, controlled motions for {A}, {B}, {C}, and {D}.",
+    "Avoid collisions and keep {A}, {B}, {C}, and {D} stable.",
+    "Place {A}, {B}, {C}, and {D} softly and carefully.",
+    "Minimize contact speed when moving {A}, {B}, {C}, and {D}.",
+    "Carry {A}, {B}, {C}, and {D} carefully and avoid obstacles.",
+    "Use a slow approach and gentle release of {A}, {B}, {C}, and {D}.",
+    "Keep motions smooth to protect {A}, {B}, {C}, and {D}.",
+    "Avoid knocking {A}, {B}, {C}, and {D} while."
+  ]
+}

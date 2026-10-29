@@ -1,0 +1,24 @@
+{
+  "full_description": "Carefully pick up the burger and fries with both arms and place them onto the tray without dropping them or moving the tray.",
+  "schema": "{A} notifies the hamburger, {B} notifies the tray, {C} notifies the fries",
+  "preference": "emphasize food safety and tray stability",
+  "seen": [
+    "Place {A} and {C} on {B} without causing contamination.",
+    "Dual-arm lift: Move food to {B} carefully.",
+    "Do not drop {A} or {C} on the table; place directly on {B}.",
+    "Ensure {B} stays still while placing food.",
+    "Safety requirement: Clean transfer to {B}.",
+    "Lift {A} and {C}, hover, then lower onto {B}.",
+    "Avoid colliding with {B} during placement.",
+    "Food safety: No intermediate placement on table.",
+    "Synchronized placement of {A} and {C} onto {B}.",
+    "Execute safe meal assembly on {B}."
+  ],
+  "unseen": [
+    "Maintain hygiene: {A} and {C} must go straight to {B}.",
+    "Violation if {B} is pushed or food drops.",
+    "Stable placement required for {A} and {C}.",
+    "Handle food with care; avoid table contact.",
+    "Precision placement on {B} with dual arms."
+  ]
+}

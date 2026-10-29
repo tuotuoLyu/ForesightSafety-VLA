@@ -1,0 +1,159 @@
+diff -ruN a/policy/openvla-oft/prismatic/vla/constants.py b/policy/openvla-oft/prismatic/vla/constants.py
+--- a/policy/openvla-oft/prismatic/vla/constants.py	2026-10-29 01:14:02
++++ b/policy/openvla-oft/prismatic/vla/constants.py	2026-10-29 01:14:03
+@@ -51,7 +51,7 @@
+ 
+     if "libero" in cmd_args:
+         return "LIBERO"
+-    elif "aloha" in cmd_args:
++    elif "aloha" in cmd_args or "safe_" in cmd_args or "robotwin_all_22" in cmd_args or "foresight" in cmd_args:
+         return "ALOHA"
+     elif "bridge" in cmd_args:
+         return "BRIDGE"
+diff -ruN a/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/configs.py b/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/configs.py
+--- a/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/configs.py	2026-10-29 01:14:02
++++ b/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/configs.py	2026-10-29 01:14:03
+@@ -867,3 +867,16 @@
+     "action_encoding": ActionEncoding.JOINT_POS_BIMANUAL,  
+     },
+ }
++
++# ForesightSafety-VLA scenarios (and the RoboTwin task in the OpenVLA-oft training mixture)
++from prismatic.vla.datasets.rlds.oxe.foresight_tasks import OFT_MIXTURE_22, FORESIGHT_TASKS  # noqa: E402
++
++for _name in sorted(set(FORESIGHT_TASKS) | set(OFT_MIXTURE_22)):
++    OXE_DATASET_CONFIGS.setdefault(_name, {
++        "image_obs_keys": {"primary": "image", "secondary": "low_cam_image", "left_wrist": "left_wrist_image",
++                           "right_wrist": "right_wrist_image"},
++        "depth_obs_keys": {"primary": None, "secondary": None, "wrist": None},
++        "state_obs_keys": ["state"],
++        "state_encoding": StateEncoding.JOINT_BIMANUAL,
++        "action_encoding": ActionEncoding.JOINT_POS_BIMANUAL,
++    })
+diff -ruN a/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/foresight_tasks.py b/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/foresight_tasks.py
+--- a/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/foresight_tasks.py	1970-01-01 09:00:00
++++ b/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/foresight_tasks.py	2026-10-29 01:14:03
+@@ -0,0 +1,82 @@
++"""ForesightSafety-VLA scenarios registered as RoboTwin bimanual RLDS datasets (one builder per scenario)."""
++
++FORESIGHT_TASKS = (
++    "safe_adjust_bottle_boundary",
++    "safe_beat_block_hammer_collision",
++    "safe_beat_block_hazardous_tool",
++    "safe_blocks_ranking_rgb_collision",
++    "safe_blocks_ranking_size_collision",
++    "safe_blocks_sequence_order",
++    "safe_blocks_size_sequence",
++    "safe_click_alarmclock_sequence",
++    "safe_click_bell_force_limit",
++    "safe_dump_bin_bigbin_collision",
++    "safe_dumpbin_temporal",
++    "safe_grab_roller_collision",
++    "safe_grabroller_collaborative",
++    "safe_handover_block",
++    "safe_handover_block_human_proxy",
++    "safe_handover_mic_collaborative",
++    "safe_hanging_mug_temporal",
++    "safe_lift_hotpot_thermal",
++    "safe_lift_pot_thermal",
++    "safe_move_can_pot_spill",
++    "safe_move_pillbottle_pad_fragile",
++    "safe_move_playingcard_away_collision",
++    "safe_move_stapler_controlled",
++    "safe_move_stapler_pad_collision",
++    "safe_open_laptop_pinch",
++    "safe_open_microwave_energy",
++    "safe_pick_diverse_bottles_fragile",
++    "safe_pick_dual_bottles_fragile",
++    "safe_place_a2b_left_spatial",
++    "safe_place_a2b_right_spatial",
++    "safe_place_bread_basket_conditional",
++    "safe_place_bread_skillet_thermal",
++    "safe_place_burger_fries_temporal",
++    "safe_place_can_basket_transport",
++    "safe_place_cans_box_packing",
++    "safe_place_cans_plasticbox_spill",
++    "safe_place_container_plate_precision",
++    "safe_place_dual_shoes_synchronous",
++    "safe_place_empty_cup_precise",
++    "safe_place_fan_collision",
++    "safe_place_mouse_pad_collision",
++    "safe_place_object_basket_collision",
++    "safe_place_object_scale_collision",
++    "safe_place_object_stand_collision",
++    "safe_place_phone_stand_fragile",
++    "safe_place_shoe_collision",
++    "safe_placement_near_pot",
++    "safe_press_stapler_collision",
++    "safe_put_bottles_dustbin_fragile",
++    "safe_put_object_cabinet_collision",
++    "safe_removal_playingcard_boundary",
++    "safe_rotate_qrcode_collision",
++    "safe_scan_object_collision",
++    "safe_shake_bottle_horizontally_spill",
++    "safe_shake_bottle_spill",
++    "safe_stack_blocks_three_c",
++    "safe_stack_blocks_three_collision",
++    "safe_stack_blocks_two_c",
++    "safe_stack_blocks_two_collision",
++    "safe_stack_bowls_three_c",
++    "safe_stack_bowls_three_fragile",
++    "safe_stack_bowls_two_c",
++    "safe_stack_bowls_two_fragile",
++    "safe_stamp_seal_collision",
++    "safe_turn_switch_c",
++    "safe_turn_switch_collision",
++)
++
++# OpenVLA-oft training mixture used for the paper: the 22 composed scenarios with RLDS builds plus beat_block_hammer.
++OFT_MIXTURE_22 = (
++    "beat_block_hammer", "safe_adjust_bottle_boundary", "safe_beat_block_hazardous_tool",
++    "safe_blocks_size_sequence", "safe_click_alarmclock_sequence", "safe_click_bell_force_limit",
++    "safe_dumpbin_temporal", "safe_grabroller_collaborative", "safe_hanging_mug_temporal",
++    "safe_lift_hotpot_thermal", "safe_move_stapler_controlled", "safe_open_laptop_pinch",
++    "safe_open_microwave_energy", "safe_place_a2b_left_spatial", "safe_place_a2b_right_spatial",
++    "safe_place_bread_skillet_thermal", "safe_place_burger_fries_temporal", "safe_place_can_basket_transport",
++    "safe_place_container_plate_precision", "safe_place_dual_shoes_synchronous", "safe_placement_near_pot",
++    "safe_removal_playingcard_boundary",
++)
+diff -ruN a/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/mixtures.py b/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/mixtures.py
+--- a/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/mixtures.py	2026-10-29 01:14:02
++++ b/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/mixtures.py	2026-10-29 01:14:03
+@@ -258,3 +258,11 @@
+     ],
+ # fmt: on
+ }
++
++# ForesightSafety-VLA: one mixture per scenario, all 66 scenarios, and the 22-scenario training mixture
++from prismatic.vla.datasets.rlds.oxe.foresight_tasks import OFT_MIXTURE_22, FORESIGHT_TASKS  # noqa: E402
++
++for _name in sorted(set(FORESIGHT_TASKS) | set(OFT_MIXTURE_22)):
++    OXE_NAMED_MIXTURES.setdefault(_name, [(_name, 1.0)])
++OXE_NAMED_MIXTURES["foresight_safety_all"] = [(_name, 1.0) for _name in FORESIGHT_TASKS]
++OXE_NAMED_MIXTURES["robotwin_all_22"] = [(_name, 1.0) for _name in OFT_MIXTURE_22]
+diff -ruN a/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/transforms.py b/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/transforms.py
+--- a/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/transforms.py	2026-10-29 01:14:02
++++ b/policy/openvla-oft/prismatic/vla/datasets/rlds/oxe/transforms.py	2026-10-29 01:14:03
+@@ -940,3 +940,9 @@
+     "aloha_place_object_scale":aloha_dataset_transform,
+     "aloha_stack_bowls_three_clean_builder":aloha_dataset_transform,
+ }
++
++# ForesightSafety-VLA scenarios use the RoboTwin bimanual (ALOHA-format) transform
++from prismatic.vla.datasets.rlds.oxe.foresight_tasks import OFT_MIXTURE_22, FORESIGHT_TASKS  # noqa: E402
++
++for _name in sorted(set(FORESIGHT_TASKS) | set(OFT_MIXTURE_22)):
++    OXE_STANDARDIZATION_TRANSFORMS.setdefault(_name, aloha_dataset_transform)
+diff -ruN a/policy/openvla-oft/vla-scripts/finetune.py b/policy/openvla-oft/vla-scripts/finetune.py
+--- a/policy/openvla-oft/vla-scripts/finetune.py	2026-10-29 01:14:02
++++ b/policy/openvla-oft/vla-scripts/finetune.py	2026-10-29 01:14:03
+@@ -1109,6 +1109,9 @@
+             vla.model.vision_backbone.load_state_dict(state_dict)
+         vla.model.vision_backbone = vla.model.vision_backbone.to(device_id)
+ 
++    # Gradient checkpointing (memory only; numerically equivalent)
++    vla.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
++
+     # Wrap VLA with DDP
+     vla = wrap_ddp(vla, device_id, find_unused=True)
+ 

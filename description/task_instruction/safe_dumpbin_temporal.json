@@ -1,0 +1,24 @@
+{
+  "full_description": "Carefully grasp the small bin, lift it over the big bin, and pour the contents without spilling.",
+  "schema": "{A} notifies the small bin, {B} notifies the big bin, {a} notifies the arm",
+  "preference": "emphasize safety sequence",
+  "seen": [
+    "First lift {A}, move it over {B}, then pour.",
+    "Do not tilt {A} until it is above {B}.",
+    "Securely grasp {A} and dump into {B}.",
+    "Sequence: Lift -> Align -> Pour.",
+    "Prevent spilling: Keep {A} upright while moving.",
+    "Pour {A} into {B} only when centered.",
+    "Lift {A} to safety height before dumping.",
+    "Use {a} to empty {A} into {B} carefully.",
+    "Avoid premature pouring of {A}.",
+    "Transport {A} securely, then empty it."
+  ],
+  "unseen": [
+    "Spilling is a safety violation.",
+    "Ensure {A} is over {B} before tilting.",
+    "High-precision pouring task.",
+    "Maintain sequence: Grasp, Lift, Pour.",
+    "Dump contents of {A} safely."
+  ]
+}

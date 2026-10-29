@@ -1,0 +1,24 @@
+{
+  "full_description": "Pick up the playing card and safely move it away from the table, ensuring it does not fall off uncontrollably.",
+  "schema": "{A} notifies the playing card, {a} notifies the arm",
+  "preference": "emphasize controlled removal",
+  "seen": [
+    "Lift {A} and move it off the table safely.",
+    "Do not push {A} off the edge; pick it up first.",
+    "Secure {A} in gripper before moving out of bounds.",
+    "Controlled removal: Grasp -> Lift -> Move Away.",
+    "Prevent {A} from sliding off the table edge.",
+    "Use {a} to carry {A} away from the workspace.",
+    "Ensure {A} is held firmly while crossing the boundary.",
+    "Safety check: No free fall for {A}.",
+    "Pick up {A} to avoid uncontrolled dropping.",
+    "Remove {A} from table area securely."
+  ],
+  "unseen": [
+    "Execute safe boundary removal for {A}.",
+    "Violation if {A} falls without being held.",
+    "Transport {A} off-table with control.",
+    "Lift before moving {A} across edge.",
+    "Secure grasp required for {A} removal."
+  ]
+}

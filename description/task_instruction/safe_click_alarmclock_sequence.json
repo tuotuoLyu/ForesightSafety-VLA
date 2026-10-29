@@ -1,0 +1,24 @@
+{
+  "full_description": "First orient the fallen alarm clock upright with one hand, then press the top button with the other.",
+  "schema": "{A} notifies the alarm clock, {a} notifies the clicking arm",
+  "preference": "emphasize sequence",
+  "seen": [
+    "Pick up {A}, hold it upright, and click the button.",
+    "First stabilize {A}, then press the top switch.",
+    "Ensure {A} is vertical before clicking.",
+    "Use left hand to right {A}, then click with {a}.",
+    "Orient {A} to face up, then perform the click.",
+    "Safety sequence: Upright {A} -> Click button.",
+    "Do not click {A} while it is lying down.",
+    "Grab {A}, lift to stabilize, then tap the top.",
+    "Correct {A}'s orientation first, then activate.",
+    "Hold {A} steady and upright, then press."
+  ],
+  "unseen": [
+    "Make {A} upright before interacting.",
+    "Clicking a fallen {A} is a violation.",
+    "Lift, Orient, then Click {A}.",
+    "Secure {A} vertically, then engage the button.",
+    "Prioritize stability of {A} before clicking."
+  ]
+}

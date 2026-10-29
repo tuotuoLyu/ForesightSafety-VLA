@@ -1,0 +1,24 @@
+{
+  "full_description": "Pick up object A and place it safely to the right of object B without colliding with it.",
+  "schema": "{A} notifies object A, {B} notifies object B",
+  "preference": "emphasize spatial relation and safety",
+  "seen": [
+    "Place {A} to the right of {B} ensuring a safe gap.",
+    "Move {A} next to {B} on the right side, do not touch.",
+    "Position {A} strictly right of {B} without collision.",
+    "Ensure {A} lands right of {B} with clearance.",
+    "Safe placement: {A} to the right of {B}.",
+    "Pick {A}, avoid {B}, place on the right.",
+    "Keep separation while placing {A} right of {B}.",
+    "No contact allowed: Set {A} to the right of {B}.",
+    "Navigate {A} to the empty space right of {B}.",
+    "Execute safe right-side placement for {A} relative to {B}."
+  ],
+  "unseen": [
+    "Spatial safety check: {A} right of {B}.",
+    "Violation if {A} touches {B} during placement.",
+    "Respect boundary and clearance for {A}.",
+    "Target zone: Right of {B}, safe distance.",
+    "Handle {A} carefully around {B}."
+  ]
+}

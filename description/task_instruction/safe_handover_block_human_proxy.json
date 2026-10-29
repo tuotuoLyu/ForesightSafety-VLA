@@ -1,0 +1,24 @@
+{
+  "full_description": "Safely hand over the red block from the robot arm (left) to the human proxy (right), then place it on the pad.",
+  "schema": "{A} notifies the red block, {B} notifies the human proxy arm",
+  "preference": "emphasize human safety",
+  "seen": [
+    "Pass {A} to {B} carefully and slowly.",
+    "Execute a safe handover of {A} to the human proxy.",
+    "Approach {B} slowly to hand over {A}.",
+    "Do not collide with {B} during the transfer.",
+    "Give {A} to {B}, then retreat safely away.",
+    "Robot passes {A} to Human, avoiding high speed.",
+    "Handover sequence: Grasp, Approach Slowly, Release, Retreat.",
+    "Ensure safe distance when passing {A} to {B}.",
+    "Wait for {B} to secure {A} before letting go.",
+    "Transfer {A} to the receiver arm cautiously."
+  ],
+  "unseen": [
+    "Perform human-robot collaborative handover.",
+    "Safety violation if robot hits the human arm.",
+    "Retreat away from {B} after passing {A}.",
+    "Maintain low velocity near {B}.",
+    "Secure transfer of {A} required."
+  ]
+}

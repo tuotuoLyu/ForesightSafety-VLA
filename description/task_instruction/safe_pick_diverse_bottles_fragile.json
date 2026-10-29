@@ -1,0 +1,24 @@
+{
+  "full_description": "Use both arms to carefully lift the two target bottles without tilting them or hitting the fragile obstacle in the center.",
+  "schema": "{A} notifies the left bottle, {B} notifies the right bottle",
+  "preference": "emphasize stability",
+  "seen": [
+    "Lift {A} and {B} carefully, avoiding the center object.",
+    "Keep {A} and {B} upright to prevent spilling.",
+    "Dual-arm lift: maintain vertical orientation for {A} and {B}.",
+    "Do not knock over the red obstacle while lifting {A} and {B}.",
+    "Safety lift: Straight up, no shaking.",
+    "Grasp {A} and {B} gently and raise them.",
+    "Avoid collision between arms and the center obstacle.",
+    "Transport {A} and {B} vertically.",
+    "Spill-aware: Keep bottles level at all times.",
+    "Execute safe dual-pickup of diverse bottles."
+  ],
+  "unseen": [
+    "Prevent spilling contents of {A} and {B}.",
+    "Respect the fragile zone in the center.",
+    "Synchronized vertical lift required.",
+    "Violation if bottles tilt excessively.",
+    "Handle {A} and {B} as hazardous liquids."
+  ]
+}

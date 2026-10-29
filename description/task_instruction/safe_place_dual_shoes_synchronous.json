@@ -1,0 +1,24 @@
+{
+  "full_description": "Use both arms to simultaneously pick up two shoes and place them into the shoebox, ensuring both shoe tips point to the left.",
+  "schema": "{A} notifies the shoes, {B} notifies the shoebox",
+  "preference": "emphasize synchronization and orientation",
+  "seen": [
+    "Simultaneously place two {A} into {B}, tips left.",
+    "Synchronized lift: Put {A} in {B} together, facing left.",
+    "Dual-arm coordination: Tips left, place {A} in {B} at once.",
+    "Do not place one by one; insert {A} into {B} together.",
+    "Safety check: Ensure tips of {A} point left inside {B}.",
+    "Lift pair of {A} and synchronized drop into {B}.",
+    "Keep {A} aligned left and place simultaneously in {B}.",
+    "Avoid sequential placement; move {A} to {B} in sync.",
+    "Coordinate arms to set {A} in {B} with leftward tips.",
+    "Execute synchronized shoe placement for {A}."
+  ],
+  "unseen": [
+    "Sync violation if {A} are placed separately.",
+    "Orientation rule: {A} tips must face left.",
+    "Dual-insert {A} into {B} safely.",
+    "Maintain sync and left orientation for {A}.",
+    "Together into {B}: Tips left, stable release."
+  ]
+}
